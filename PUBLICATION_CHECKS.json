@@ -1,0 +1,12 @@
+{
+  "syntax": "all Python files passed",
+  "cli": "8 executable CLIs passed --help",
+  "tests": "7 existing runtime evidence tests passed",
+  "privacy": "No original username/home paths or typical token/private-key signatures in delivered text files",
+  "excluded_binaries": "No weights, images, archives, or raw prediction arrays",
+  "limitations": [
+    "NPU inference and quantization were not rerun",
+    "Original authorship cannot be proved by automated code inspection",
+    "Apache-2.0 does not relicense external dependencies or input/output models"
+  ]
+}

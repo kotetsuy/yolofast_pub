@@ -1,0 +1,107 @@
+{
+  "license": "Apache-2.0",
+  "excluded": [
+    "model weights and transformed weights",
+    "Ultralytics-dependent export and GPU code",
+    "original quantizer with external-source provenance",
+    "datasets and images",
+    "raw logs and profiles",
+    "original Git history",
+    "credentials and local agent configuration"
+  ],
+  "changes": [
+    "Require explicit image manifest instead of private workspace defaults",
+    "Replace local home paths in aggregate summaries",
+    "Provide standalone public-API quantization entry point"
+  ],
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "34a8dd3702fbc39e25517ff8cc964372c1768d914db3a3eab64faca4083fc595"
+    },
+    {
+      "path": "ANSWER.md",
+      "sha256": "a7f4e8eacd8d8334e37be8129a00434ad892894ae3c6cef6b7bf85b9364e7ebb"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "NOTICE",
+      "sha256": "928a8a2048c9c19c1ce4bd454a52e5b7db226ace8e7a45179a8524f87b2cb09e"
+    },
+    {
+      "path": "PUBLICATION_CHECKS.json",
+      "sha256": "8787be9891f3216924029d72219af586e8f390fead31329fff9508b7a5868ffc"
+    },
+    {
+      "path": "README.md",
+      "sha256": "1526c342e652451eefb591cfcb867b3d4eed813a4984ada15d613b3c20ceac4e"
+    },
+    {
+      "path": "THIRD_PARTY.md",
+      "sha256": "9de12e06f5b7f59d1079a906a7fe199f56fc41e0c22617263864324423f46c87"
+    },
+    {
+      "path": "benchmarks/audit_npu_compile.py",
+      "sha256": "415d6866eb6e6523228c9bf357bc85dcd58ec42921669571b0400e6f1c5a8d77"
+    },
+    {
+      "path": "benchmarks/evaluate_npu_coco.py",
+      "sha256": "0e1d1d32e1d8c46220e40a66ddeef0285864b04dc90a6c2d7d0f2bfee566c7ef"
+    },
+    {
+      "path": "benchmarks/inspect_npu_runtime.py",
+      "sha256": "6ec4910c6fb1c4180fa834c395de68bb8e0645ef0f01e84506c20de5a9d8630b"
+    },
+    {
+      "path": "benchmarks/npu_common.py",
+      "sha256": "03c8a0fc68813278f97928d66938229dc5491494553e43e02d83b0733714ff6e"
+    },
+    {
+      "path": "benchmarks/npu_postprocess.py",
+      "sha256": "90242decdb323f0b339a57068d4431dac9ebf33b439db762b7c6f927f7a81cb6"
+    },
+    {
+      "path": "benchmarks/npu_split.py",
+      "sha256": "8d8fd4a1c092ee86bf3e155aeb3f629a3039ee13bd48c4fbd3666802ef1bacd7"
+    },
+    {
+      "path": "benchmarks/prepare_npu_int16.py",
+      "sha256": "6642a125a959fad559ddc8b9eaf1b50832291d5982eac03ed47a7145ad913563"
+    },
+    {
+      "path": "benchmarks/prepare_npu_int16_outputs.py",
+      "sha256": "e6bbe047e738a4b75f762a4b7904dc65eea5ba55000dabe92c316806b48a9d66"
+    },
+    {
+      "path": "benchmarks/prepare_npu_split.py",
+      "sha256": "cb52475fb23c4bb3cdb008cbd18b5275ed8a250db8f5e8208bd832153ddf1984"
+    },
+    {
+      "path": "benchmarks/quantize_npu.py",
+      "sha256": "0b5c7528f3a5490f2a21c9adf1cc6c1074cbf8db535ea03a958ac20d7550361c"
+    },
+    {
+      "path": "examples/images-manifest.json",
+      "sha256": "20ff8fc31aa30cc6198a52f56e3048bdf4ac37704e0ffc730922645381e4107a"
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "962124df39936fc41e2c51bb45e0e0ad8a8c977f040bf9244741cc4110d2b99c"
+    },
+    {
+      "path": "summaries/coco.json",
+      "sha256": "3508a7af5320ab2e5447883cf3c7d7cdc42cd18f0a56d73e8d35cd2b248f8606"
+    },
+    {
+      "path": "summaries/sustained.json",
+      "sha256": "1f3a578908acf299c4b20517fbd37a7901cbbe05bc4a702f25d3e7fc730f567f"
+    },
+    {
+      "path": "tests/test_npu_runtime.py",
+      "sha256": "b3f27b47efd3ce002122c23a2257fa7d4e6cf13a09c2958c69a813bccf5c0fbe"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+yolofast ONNX quantization tools
+Copyright 2026 yolofast contributors
+
+Apache License 2.0 applies to the original scripts and documentation
+in this repository. External dependencies and model weights retain
+their own licenses. No model weights or vendor SDK source are included.

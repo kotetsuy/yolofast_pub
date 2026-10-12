@@ -1,0 +1,139 @@
+{
+  "status": "complete",
+  "accuracy_status": "unqualified: no agreed mAP acceptance threshold",
+  "metrics": {
+    "fp32_cpu": {
+      "mAP50_95": 0.40263689968781285,
+      "mAP50": 0.5579059199674922,
+      "mAP75": 0.43635952259329147,
+      "AP_small": 0.19770904784465843,
+      "AP_medium": 0.4421265831994821,
+      "AP_large": 0.5830893069300731,
+      "AR1": 0.3305914498080628,
+      "AR10": 0.5513627353004363,
+      "AR100": 0.6142776943347197,
+      "AR_small": 0.3874366488501493,
+      "AR_medium": 0.6721821062714295,
+      "AR_large": 0.8028847133056378
+    },
+    "quantized_cpu": {
+      "mAP50_95": 0.398182154426348,
+      "mAP50": 0.5552453734487408,
+      "mAP75": 0.4320079895288187,
+      "AP_small": 0.19189898071095726,
+      "AP_medium": 0.4383199633361805,
+      "AP_large": 0.5754514115778505,
+      "AR1": 0.32765319724359215,
+      "AR10": 0.5478101544893669,
+      "AR100": 0.6110791468241237,
+      "AR_small": 0.3848711365323936,
+      "AR_medium": 0.6682666609845319,
+      "AR_large": 0.7962229613251008
+    },
+    "quantized_npu": {
+      "mAP50_95": 0.3966761978292411,
+      "mAP50": 0.5528115150369941,
+      "mAP75": 0.4312680872913627,
+      "AP_small": 0.19112400682840008,
+      "AP_medium": 0.439017251212642,
+      "AP_large": 0.5715525354232935,
+      "AR1": 0.32692770417844386,
+      "AR10": 0.5378698668731765,
+      "AR100": 0.5931492795629675,
+      "AR_small": 0.36543594145635355,
+      "AR_medium": 0.6508024892895287,
+      "AR_large": 0.7774025617675691
+    }
+  },
+  "cpu_only": false,
+  "score_threshold": 0.001,
+  "invalid_box_policy": "Discard inverted/nonpositive boxes equally for all backends; save excluded rows; no coordinate swapping",
+  "coco_parameters": {
+    "iou_thresholds": "0.50:0.05:0.95",
+    "max_dets": [
+      1,
+      10,
+      100
+    ]
+  },
+  "scope": "Independent of quantization calibration only; not necessarily independent of original model training",
+  "image_count": 5000,
+  "annotation_sha256": "e8c7f7908f1d7278341fae127d0da654f102f11bd7b21d8aeefa635b8c810b6f",
+  "calibration_image_count": 60,
+  "calibration_overlap_ids": [],
+  "models": {
+    "fp32_cpu": {
+      "path": "$HOME/yolofast/models/npu/yolo26n-640-split-fp32-v2.onnx",
+      "sha256": "a617c5ee72e3395b806ff88b65a80f271ae3358d4209bc6e88a8eeeebb5b19eb"
+    },
+    "quantized_cpu": {
+      "path": "$HOME/yolofast/models/npu/accuracy95/perchannel/yolo26n-640-a16w8.onnx",
+      "sha256": "a2b812169bafc11b3bd5b16d132d070bdc8b62b7f6410ded823251efab82aed4"
+    },
+    "quantized_npu": {
+      "path": "$HOME/yolofast/models/npu/accuracy95/perchannel/yolo26n-640-a16w8-int16.onnx",
+      "sha256": "663dbb1792126a3de2e7ea1a27a4db11839eb88a89a6f72507390d38d7d20c9b"
+    }
+  },
+  "ort": "1.27.0",
+  "python": "3.12.13 (main, Mar 24 2026, 22:49:22) [Clang 22.1.1 ]",
+  "evaluation_code_sha256": "4da1aed34a4b67acc9f76de21bf12a9eed73b683ba7da45c8cc180cf73427a35",
+  "npu_provider_options": {
+    "cache_dir": "results/npu-accuracy95-20261011/perchannel/coco5000/cache",
+    "opt_level": "2",
+    "enable_cache_file_io_in_mem": "0"
+  },
+  "completed_images": 5000,
+  "evaluation_wall_s": 700.2090942619998,
+  "excluded_geometry_counts": {
+    "fp32_cpu": {
+      "total": 8,
+      "inverted_raw_boxes": 2,
+      "score_ge_025": 0
+    },
+    "quantized_cpu": {
+      "total": 16,
+      "inverted_raw_boxes": 2,
+      "score_ge_025": 0
+    },
+    "quantized_npu": {
+      "total": 6,
+      "inverted_raw_boxes": 1,
+      "score_ge_025": 0
+    }
+  },
+  "delta_vs_fp32_percentage_points": {
+    "quantized_cpu": {
+      "mAP50_95": -0.4454745261464832,
+      "mAP50": -0.2660546518751361,
+      "mAP75": -0.4351533064472779,
+      "AP_small": -0.5810067133701163,
+      "AP_medium": -0.3806619863301608,
+      "AP_large": -0.763789535222259,
+      "AR1": -0.2938252564470667,
+      "AR10": -0.3552580811069461,
+      "AR100": -0.3198547510596006,
+      "AR_small": -0.25655123177557027,
+      "AR_medium": -0.39154452868975786,
+      "AR_large": -0.6661751980536978
+    },
+    "quantized_npu": {
+      "mAP50_95": -0.5960701858571782,
+      "mAP50": -0.5094404930498064,
+      "mAP75": -0.5091435301928793,
+      "AP_small": -0.6585041016258342,
+      "AP_medium": -0.31093319868401026,
+      "AP_large": -1.1536771506779564,
+      "AR1": -0.3663745629618964,
+      "AR10": -1.349286842725983,
+      "AR100": -2.11284147717522,
+      "AR_small": -2.200070739379573,
+      "AR_medium": -2.137961698190083,
+      "AR_large": -2.5482151538068765
+    }
+  },
+  "independent_of_calibration": true,
+  "full_coco_val2017": true,
+  "npu_evaluated": true,
+  "acceptance_passed": null
+}

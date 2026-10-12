@@ -1,0 +1,22 @@
+{
+  "images": [
+    {
+      "path": "images/sample-1.jpg",
+      "sha256": "REPLACE_WITH_SHA256",
+      "role": "smoke",
+      "kind": "image"
+    },
+    {
+      "path": "images/sample-2.jpg",
+      "sha256": "REPLACE_WITH_SHA256",
+      "role": "smoke",
+      "kind": "image"
+    },
+    {
+      "path": "images/sample-3.jpg",
+      "sha256": "REPLACE_WITH_SHA256",
+      "role": "smoke",
+      "kind": "image"
+    }
+  ]
+}

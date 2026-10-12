@@ -1,0 +1,473 @@
+{
+  "status": "complete",
+  "ort": "1.27.0",
+  "python": "3.12.13",
+  "model": "$HOME/yolofast/models/npu/accuracy95/perchannel/yolo26n-640-a16w8-int16.onnx",
+  "model_sha256": "663dbb1792126a3de2e7ea1a27a4db11839eb88a89a6f72507390d38d7d20c9b",
+  "validation": [
+    {
+      "passed": true,
+      "geometry_valid": true,
+      "cpu_detections": [
+        [
+          82.0893325805664,
+          136.99209594726562,
+          555.433349609375,
+          445.77911376953125,
+          0.9278388023376465,
+          5.0
+        ],
+        [
+          108.64542388916016,
+          238.2482147216797,
+          220.97288513183594,
+          533.9967651367188,
+          0.9222487211227417,
+          0.0
+        ],
+        [
+          213.18006896972656,
+          241.47630310058594,
+          284.425048828125,
+          511.0470886230469,
+          0.9088898301124573,
+          0.0
+        ],
+        [
+          477.0512390136719,
+          232.2711944580078,
+          560.4520263671875,
+          520.8070068359375,
+          0.8754640221595764,
+          0.0
+        ],
+        [
+          79.6430435180664,
+          327.4494323730469,
+          118.25403594970703,
+          519.9747924804688,
+          0.5163514614105225,
+          0.0
+        ]
+      ],
+      "npu_detections": [
+        [
+          82.79547882080078,
+          137.14340209960938,
+          553.5418701171875,
+          444.0389709472656,
+          0.9246854186058044,
+          5.0
+        ],
+        [
+          108.39322662353516,
+          238.55084228515625,
+          220.26673889160156,
+          533.6689453125,
+          0.9136772155761719,
+          0.0
+        ],
+        [
+          213.1044158935547,
+          241.14845275878906,
+          284.425048828125,
+          511.0470886230469,
+          0.8989996910095215,
+          0.0
+        ],
+        [
+          477.3538818359375,
+          233.05300903320312,
+          560.93115234375,
+          520.7061157226562,
+          0.8733139634132385,
+          0.0
+        ],
+        [
+          79.39085388183594,
+          328.13037109375,
+          118.6827621459961,
+          519.8234252929688,
+          0.4843590259552002,
+          0.0
+        ]
+      ],
+      "matches": [
+        {
+          "iou": 0.9884204212371099,
+          "score_diff": 0.003153383731842041
+        },
+        {
+          "iou": 0.9893788348911551,
+          "score_diff": 0.008571505546569824
+        },
+        {
+          "iou": 0.9977259772098516,
+          "score_diff": 0.009890139102935791
+        },
+        {
+          "iou": 0.9876664371255818,
+          "score_diff": 0.0021500587463378906
+        },
+        {
+          "iou": 0.978495444094442,
+          "score_diff": 0.031992435455322266
+        }
+      ],
+      "image": "$HOME/yolotest/calib_images/bus.jpg",
+      "raw_max_abs": [
+        39.29191589355469,
+        0.031992435455322266
+      ],
+      "raw_finite": true,
+      "postprocess_exact": true
+    },
+    {
+      "passed": true,
+      "geometry_valid": true,
+      "cpu_detections": [
+        [
+          108.46888732910156,
+          238.09689331054688,
+          221.83035278320312,
+          534.1481323242188,
+          0.9275807738304138,
+          0.0
+        ],
+        [
+          81.38318634033203,
+          137.2190704345703,
+          555.1306762695312,
+          445.9304504394531,
+          0.9249720573425293,
+          5.0
+        ],
+        [
+          212.80177307128906,
+          241.29977416992188,
+          284.2737121582031,
+          511.0470886230469,
+          0.9104665517807007,
+          0.0
+        ],
+        [
+          476.9755859375,
+          232.2711944580078,
+          560.5528564453125,
+          520.6304931640625,
+          0.8762953877449036,
+          0.0
+        ],
+        [
+          79.6430435180664,
+          327.4494323730469,
+          118.25403594970703,
+          520.1513061523438,
+          0.5545933842658997,
+          0.0
+        ]
+      ],
+      "npu_detections": [
+        [
+          108.09059143066406,
+          239.43353271484375,
+          221.83035278320312,
+          533.6689453125,
+          0.9246854186058044,
+          0.0
+        ],
+        [
+          82.0893325805664,
+          137.4712677001953,
+          553.5418701171875,
+          444.997314453125,
+          0.9173465967178345,
+          5.0
+        ],
+        [
+          212.54959106445312,
+          241.14845275878906,
+          284.2737121582031,
+          511.12274169921875,
+          0.9026690721511841,
+          0.0
+        ],
+        [
+          477.2782287597656,
+          232.5233917236328,
+          560.93115234375,
+          520.5548095703125,
+          0.8733139634132385,
+          0.0
+        ],
+        [
+          79.34041595458984,
+          328.13037109375,
+          118.6827621459961,
+          520.3782958984375,
+          0.5247222781181335,
+          0.0
+        ]
+      ],
+      "matches": [
+        {
+          "iou": 0.9905812709634586,
+          "score_diff": 0.002895355224609375
+        },
+        {
+          "iou": 0.9913346894470988,
+          "score_diff": 0.007625460624694824
+        },
+        {
+          "iou": 0.9956462439019274,
+          "score_diff": 0.0077974796295166016
+        },
+        {
+          "iou": 0.9907665379010828,
+          "score_diff": 0.002981424331665039
+        },
+        {
+          "iou": 0.9768560719888064,
+          "score_diff": 0.029871106147766113
+        }
+      ],
+      "image": "$HOME/yolotest/calib2/c000.jpg",
+      "raw_max_abs": [
+        46.857757568359375,
+        0.029871106147766113
+      ],
+      "raw_finite": true,
+      "postprocess_exact": true
+    },
+    {
+      "passed": true,
+      "geometry_valid": true,
+      "cpu_detections": [
+        [
+          278.77587890625,
+          361.1678466796875,
+          387.34564208984375,
+          638.8593139648438,
+          0.9278388023376465,
+          0.0
+        ],
+        [
+          131.64556884765625,
+          356.37615966796875,
+          260.0126037597656,
+          639.0862426757812,
+          0.9227933883666992,
+          0.0
+        ],
+        [
+          90.26043701171875,
+          204.22715759277344,
+          560.7041625976562,
+          645.9963989257812,
+          0.9182926416397095,
+          5.0
+        ],
+        [
+          79.34041595458984,
+          491.9559631347656,
+          130.0063018798828,
+          640.0194091796875,
+          0.5211389064788818,
+          0.0
+        ]
+      ],
+      "npu_detections": [
+        [
+          278.77587890625,
+          361.79833984375,
+          387.2699890136719,
+          638.7836303710938,
+          0.928354799747467,
+          0.0
+        ],
+        [
+          131.34292602539062,
+          356.8553161621094,
+          260.0882568359375,
+          638.7836303710938,
+          0.9173465967178345,
+          0.0
+        ],
+        [
+          91.97535705566406,
+          204.9333038330078,
+          560.8555297851562,
+          645.9963989257812,
+          0.9136772155761719,
+          5.0
+        ],
+        [
+          79.26475524902344,
+          492.409912109375,
+          129.9558563232422,
+          639.7924194335938,
+          0.4806896448135376,
+          0.0
+        ]
+      ],
+      "matches": [
+        {
+          "iou": 0.9967619049099794,
+          "score_diff": 0.0005159974098205566
+        },
+        {
+          "iou": 0.9943125516556588,
+          "score_diff": 0.005446791648864746
+        },
+        {
+          "iou": 0.9944426393907903,
+          "score_diff": 0.004615426063537598
+        },
+        {
+          "iou": 0.9929340439931152,
+          "score_diff": 0.04044926166534424
+        }
+      ],
+      "image": "$HOME/yolotest/calib2/c001.jpg",
+      "raw_max_abs": [
+        64.73837280273438,
+        0.04044926166534424
+      ],
+      "raw_finite": true,
+      "postprocess_exact": true
+    }
+  ],
+  "runs": [
+    {
+      "trial": 1,
+      "frames": 20518,
+      "elapsed_s": 300.00612624599944,
+      "fps": 68.39193671390437,
+      "mean_ms": 14.618714033529082,
+      "p50_p95_p99_ms": [
+        14.610071500101185,
+        15.455656000085582,
+        15.845156159275573
+      ]
+    }
+  ],
+  "validation_scope": "Smoke and equivalence only; independent mAP untested.",
+  "accuracy_status": "unqualified",
+  "cpu_check": false,
+  "boundary": "CPU normalized FP32 input -> external quantization -> ORT -> CPU top-k; excludes preprocessing/JSON",
+  "npu_execution": "pending profile review",
+  "args": {
+    "output": "results/npu-accuracy95-20261011/perchannel/sustained",
+    "seconds": 300.0,
+    "repeats": 1,
+    "int16_input": true,
+    "model": "models/npu/accuracy95/perchannel/yolo26n-640-a16w8-int16.onnx",
+    "reference_model": "models/npu/accuracy95/perchannel/yolo26n-640-a16w8.onnx",
+    "quant_meta": "models/npu/accuracy95/perchannel/yolo26n-640-a16w8-int16.json",
+    "execution": "run",
+    "postprocess": "stable",
+    "quantization": "reference",
+    "images_manifest": null,
+    "intra_op_threads": null,
+    "profile_runs": 50,
+    "opt_level": 2,
+    "target": null,
+    "phase_file": null,
+    "phase_ack_dir": null,
+    "skip_profile": true,
+    "disk_cache": true,
+    "compare_npu": "results/npu-accuracy95-20261011/perchannel/smoke",
+    "diagnostic_score_tolerance": null,
+    "cpu_check": false
+  },
+  "telemetry": {
+    "temperature": {
+      "value": null,
+      "reason": "No telemetry collector configured"
+    },
+    "clock": {
+      "value": null,
+      "reason": "No telemetry collector configured"
+    },
+    "power": {
+      "value": null,
+      "reason": "No telemetry collector configured"
+    },
+    "other_load": {
+      "value": null,
+      "reason": "No telemetry collector configured"
+    }
+  },
+  "reference_model": "$HOME/yolofast/models/npu/accuracy95/perchannel/yolo26n-640-a16w8.onnx",
+  "reference_sha256": "a2b812169bafc11b3bd5b16d132d070bdc8b62b7f6410ded823251efab82aed4",
+  "provider_options": {
+    "cache_dir": "$HOME/yolofast/results/npu-accuracy95-20261011/perchannel/sustained/cache",
+    "opt_level": "2",
+    "enable_cache_file_io_in_mem": "0"
+  },
+  "init_s": 24.29945790599959,
+  "int16_input": true,
+  "session_io": {
+    "inputs": [
+      {
+        "name": "images",
+        "shape": [
+          1,
+          3,
+          640,
+          640
+        ],
+        "dtype": "tensor(int16)"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "/model/model.23/Mul_2_output_0",
+        "shape": [
+          1,
+          4,
+          8400
+        ],
+        "dtype": "tensor(float)"
+      },
+      {
+        "name": "/model/model.23/Sigmoid_output_0",
+        "shape": [
+          1,
+          80,
+          8400
+        ],
+        "dtype": "tensor(float)"
+      }
+    ]
+  },
+  "baseline_npu_exact": [
+    true,
+    true,
+    true
+  ],
+  "execution_exact": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "validation_passed": true,
+  "diagnostic_gate_passed": true,
+  "diagnostic_score_tolerance": null,
+  "performance_qualification": "smoke-test passed; mAP untested",
+  "pooled_fps": 68.39193671390437,
+  "separate_stage_mean_ms": {
+    "external_quantization": 1.0711482499573322,
+    "session_run": 13.082476350027719,
+    "cpu_topk": 0.6356794300063484
+  }
+}
