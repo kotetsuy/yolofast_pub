@@ -1,0 +1,46 @@
+{
+  "status": "failed",
+  "args": {
+    "models": [
+      "yolo26n"
+    ],
+    "sizes": [
+      448
+    ],
+    "seconds": 5.0,
+    "repeats": 3,
+    "warmup": 100,
+    "worker": true,
+    "output": "$HOME/yolofast/results/graph-20261031-124402/yolo26n-448"
+  },
+  "batch": 1,
+  "precision": "fp16",
+  "python": "3.12.13 (main, Mar 24 2026, 22:49:22) [Clang 22.1.1 ]",
+  "executable": "$HOME/yolofast/.venv-rocm10/bin/python",
+  "torch": "2.13.0+rocm10.0.0",
+  "hip": "7.15.26333",
+  "ultralytics": "8.4.158",
+  "boundary": "synthetic preallocated GPU input -> forward output; no input copy, preprocessing, external NMS, result transfer or JSON",
+  "validation": [
+    {
+      "seed": 101,
+      "finite": true,
+      "exact_equal": false,
+      "max_abs_diff": 424.5
+    }
+  ],
+  "runs": [],
+  "device": "AMD Radeon 8060S Graphics",
+  "weight_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+  "load_fuse_s": 0.23684241399996608,
+  "end2end": true,
+  "warmup_s": 2.727697874999876,
+  "capture_first_replay_s": 0.017001367999910144,
+  "output_shape": [
+    1,
+    300,
+    6
+  ],
+  "output_dtype": "torch.float32",
+  "error": "RuntimeError('Graph/eager output mismatch; speed results rejected')"
+}

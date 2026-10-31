@@ -1,0 +1,274 @@
+{
+  "status": "complete",
+  "args": {
+    "precision": "fp32",
+    "seconds": 5.0,
+    "repeats": 3,
+    "warmup": 100,
+    "hip_graph": true,
+    "prebind": true,
+    "output": "$HOME/yolofast/results/migraphx-20261031-124859"
+  },
+  "batch": 1,
+  "size": 448,
+  "torch": "2.13.0+rocm10.0.0",
+  "hip": "7.15.26333",
+  "onnxruntime": "1.29.0",
+  "ultralytics": "8.4.194",
+  "device": "AMD Radeon 8060S Graphics",
+  "model_sha256": "349a966a0b1948f8eb33e2679ee559b14d815dc336e9a9c2d031ffcc71c7d61a",
+  "boundary": "preallocated GPU input -> 300x6 end2end detections; serial GPU completion; excludes preprocessing, input copy, result transfer and JSON",
+  "validation": [
+    {
+      "image": "000000000139.jpg",
+      "finite": true,
+      "reference_count": 8,
+      "candidate_count": 8,
+      "matched": 8,
+      "min_iou": 0.9999961853027344,
+      "max_score_diff": 1.6987323760986328e-06,
+      "passed": true
+    },
+    {
+      "image": "000000000285.jpg",
+      "finite": true,
+      "reference_count": 1,
+      "candidate_count": 1,
+      "matched": 1,
+      "min_iou": 0.9999992251396179,
+      "max_score_diff": 2.384185791015625e-07,
+      "passed": true
+    },
+    {
+      "image": "000000000632.jpg",
+      "finite": true,
+      "reference_count": 4,
+      "candidate_count": 4,
+      "matched": 4,
+      "min_iou": 0.9999992251396179,
+      "max_score_diff": 2.682209014892578e-07,
+      "passed": true
+    },
+    {
+      "image": "000000000724.jpg",
+      "finite": true,
+      "reference_count": 1,
+      "candidate_count": 1,
+      "matched": 1,
+      "min_iou": 1.0,
+      "max_score_diff": 1.1920928955078125e-07,
+      "passed": true
+    },
+    {
+      "image": "000000000776.jpg",
+      "finite": true,
+      "reference_count": 3,
+      "candidate_count": 3,
+      "matched": 3,
+      "min_iou": 0.9999993443489075,
+      "max_score_diff": 2.1457672119140625e-06,
+      "passed": true
+    },
+    {
+      "image": "000000000785.jpg",
+      "finite": true,
+      "reference_count": 1,
+      "candidate_count": 1,
+      "matched": 1,
+      "min_iou": 1.0,
+      "max_score_diff": 0.0,
+      "passed": true
+    },
+    {
+      "image": "000000000802.jpg",
+      "finite": true,
+      "reference_count": 1,
+      "candidate_count": 1,
+      "matched": 1,
+      "min_iou": 1.0,
+      "max_score_diff": 4.76837158203125e-07,
+      "passed": true
+    },
+    {
+      "image": "000000000872.jpg",
+      "finite": true,
+      "reference_count": 3,
+      "candidate_count": 3,
+      "matched": 3,
+      "min_iou": 0.9999993443489075,
+      "max_score_diff": 3.993511199951172e-06,
+      "passed": true
+    },
+    {
+      "image": "000000000885.jpg",
+      "finite": true,
+      "reference_count": 4,
+      "candidate_count": 4,
+      "matched": 4,
+      "min_iou": 0.9999992847442627,
+      "max_score_diff": 4.947185516357422e-06,
+      "passed": true
+    },
+    {
+      "image": "000000001000.jpg",
+      "finite": true,
+      "reference_count": 10,
+      "candidate_count": 10,
+      "matched": 10,
+      "min_iou": 0.9999988675117493,
+      "max_score_diff": 6.020069122314453e-06,
+      "passed": true
+    },
+    {
+      "image": "000000001268.jpg",
+      "finite": true,
+      "reference_count": 5,
+      "candidate_count": 5,
+      "matched": 5,
+      "min_iou": 0.9999993443489075,
+      "max_score_diff": 8.344650268554688e-07,
+      "passed": true
+    },
+    {
+      "image": "000000001296.jpg",
+      "finite": true,
+      "reference_count": 4,
+      "candidate_count": 4,
+      "matched": 4,
+      "min_iou": 0.9999990463256836,
+      "max_score_diff": 1.6391277313232422e-06,
+      "passed": true
+    },
+    {
+      "image": "000000001353.jpg",
+      "finite": true,
+      "reference_count": 4,
+      "candidate_count": 4,
+      "matched": 4,
+      "min_iou": 0.9999991655349731,
+      "max_score_diff": 1.2814998626708984e-06,
+      "passed": true
+    },
+    {
+      "image": "000000001425.jpg",
+      "finite": true,
+      "reference_count": 3,
+      "candidate_count": 3,
+      "matched": 3,
+      "min_iou": 0.999999463558197,
+      "max_score_diff": 1.7881393432617188e-06,
+      "passed": true
+    },
+    {
+      "image": "000000001490.jpg",
+      "finite": true,
+      "reference_count": 1,
+      "candidate_count": 1,
+      "matched": 1,
+      "min_iou": 0.9999995231628418,
+      "max_score_diff": 0.0,
+      "passed": true
+    },
+    {
+      "image": "000000001503.jpg",
+      "finite": true,
+      "reference_count": 6,
+      "candidate_count": 6,
+      "matched": 6,
+      "min_iou": 0.9999988675117493,
+      "max_score_diff": 6.258487701416016e-07,
+      "passed": true
+    },
+    {
+      "image": "000000001532.jpg",
+      "finite": true,
+      "reference_count": 6,
+      "candidate_count": 6,
+      "matched": 6,
+      "min_iou": 0.9999991059303284,
+      "max_score_diff": 1.519918441772461e-06,
+      "passed": true
+    },
+    {
+      "image": "000000001584.jpg",
+      "finite": true,
+      "reference_count": 7,
+      "candidate_count": 7,
+      "matched": 7,
+      "min_iou": 0.9999983906745911,
+      "max_score_diff": 8.344650268554688e-07,
+      "passed": true
+    },
+    {
+      "image": "000000001675.jpg",
+      "finite": true,
+      "reference_count": 2,
+      "candidate_count": 2,
+      "matched": 2,
+      "min_iou": 0.9999989867210388,
+      "max_score_diff": 6.586313247680664e-06,
+      "passed": true
+    },
+    {
+      "image": "000000001761.jpg",
+      "finite": true,
+      "reference_count": 2,
+      "candidate_count": 2,
+      "matched": 2,
+      "min_iou": 0.9999992847442627,
+      "max_score_diff": 7.152557373046875e-07,
+      "passed": true
+    }
+  ],
+  "runs": [
+    {
+      "trial": 1,
+      "frames": 3000,
+      "elapsed_s": 5.0004697879999185,
+      "fps": 599.9436307363305,
+      "host_ms": {
+        "mean": 1.6666883493348905,
+        "p50": 1.6653225000027305,
+        "p95": 1.759421449958154,
+        "p99": 1.8152549999035728
+      }
+    },
+    {
+      "trial": 2,
+      "frames": 2996,
+      "elapsed_s": 5.00018760099988,
+      "fps": 599.1775187396759,
+      "host_ms": {
+        "mean": 1.668827186583436,
+        "p50": 1.6675650001616305,
+        "p95": 1.7421044999537116,
+        "p99": 1.813927549960681
+      }
+    },
+    {
+      "trial": 3,
+      "frames": 2997,
+      "elapsed_s": 5.000760299000149,
+      "fps": 599.3088692131914,
+      "host_ms": {
+        "mean": 1.6684618214899078,
+        "p50": 1.6670889999659266,
+        "p95": 1.7480758000147034,
+        "p99": 1.8109878400628077
+      }
+    }
+  ],
+  "load_compile_s": 32.511431894,
+  "providers": [
+    "MIGraphXExecutionProvider",
+    "CPUExecutionProvider"
+  ],
+  "io_binding": true,
+  "validation_passed": true,
+  "fps": 599.4766752740811,
+  "profile_provider_events": {
+    "MIGraphXExecutionProvider": 1
+  },
+  "source_record": "results/migraphx-20261031-124859/result.json",
+  "publication_note": "Recorded in source workspace; not rerun in this public repository. Model weights and implementation are not included."
+}

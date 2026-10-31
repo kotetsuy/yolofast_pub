@@ -8,5 +8,15 @@
     "NPU inference and quantization were not rerun",
     "Original authorship cannot be proved by automated code inspection",
     "Apache-2.0 does not relicense external dependencies or input/output models"
-  ]
+  ],
+  "sync_2026_10_31": {
+    "scope": "Four independent NPU helper/evaluation CLIs, regression tests, selected GPU aggregate results, documentation",
+    "syntax": "All benchmark and test Python files parsed",
+    "cli": "All four added CLIs passed --help",
+    "tests": "15 passed with external saved-output fixtures; 14 passed and 1 skipped without fixtures",
+    "test_environment": "Source workspace .venv-migraphx, ONNX Runtime 1.29.0; environment and fixtures not redistributed",
+    "hardware": "GPU and NPU inference not rerun; copied results are historical source records",
+    "exclusions": "No model weights, Ultralytics source or directly dependent execution code, dataset images, raw output arrays or profiles",
+    "privacy": "Home path anonymized in added aggregate records"
+  }
 }

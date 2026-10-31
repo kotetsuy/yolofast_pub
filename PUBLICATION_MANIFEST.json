@@ -12,7 +12,9 @@
   "changes": [
     "Require explicit image manifest instead of private workspace defaults",
     "Replace local home paths in aggregate summaries",
-    "Provide standalone public-API quantization entry point"
+    "Provide standalone public-API quantization entry point",
+    "2026-10-31: add independent NPU CLIs and regression tests with explicit external inputs; copy GPU aggregate measurements including validation failures; anonymize home paths",
+    "Document a Codex prompt for creating Ultralytics-dependent workflows separately, with validation and license provenance requirements"
   ],
   "files": [
     {
@@ -33,23 +35,43 @@
     },
     {
       "path": "PUBLICATION_CHECKS.json",
-      "sha256": "8787be9891f3216924029d72219af586e8f390fead31329fff9508b7a5868ffc"
+      "sha256": "13836fffa0d71cad5f92ab10e93e4c4ecdd20248b69d10b91dd595cf7dceeeff"
     },
     {
       "path": "README.md",
-      "sha256": "1526c342e652451eefb591cfcb867b3d4eed813a4984ada15d613b3c20ceac4e"
+      "sha256": "47e83d39dd8d868c5787ad4ebc3b8f8d94aece81d6204f23b7e02b8a6fdc2b0c"
     },
     {
       "path": "THIRD_PARTY.md",
       "sha256": "9de12e06f5b7f59d1079a906a7fe199f56fc41e0c22617263864324423f46c87"
     },
     {
+      "path": "ULTRALYTICS_WORKFLOW.md",
+      "sha256": "b3dc2e308863abf1c690d8cf002166ddf7db398aa4a43c9354a76dc6ae0597c5"
+    },
+    {
+      "path": "UPDATES.md",
+      "sha256": "7a6285af78835c404534671f504ca08179102948e0447da672e8b67951f24cbc"
+    },
+    {
       "path": "benchmarks/audit_npu_compile.py",
       "sha256": "415d6866eb6e6523228c9bf357bc85dcd58ec42921669571b0400e6f1c5a8d77"
     },
     {
+      "path": "benchmarks/benchmark_npu_host.py",
+      "sha256": "5fb2afaa3bf27751a3218341e59082dddba3fc6e22161444043796e6043145be"
+    },
+    {
+      "path": "benchmarks/compare_npu_variants.py",
+      "sha256": "bedaa7d5eb5524aab9c5a96315ad6559c8d820afb4fc074fb7ba21a92a64d81a"
+    },
+    {
       "path": "benchmarks/evaluate_npu_coco.py",
       "sha256": "0e1d1d32e1d8c46220e40a66ddeef0285864b04dc90a6c2d7d0f2bfee566c7ef"
+    },
+    {
+      "path": "benchmarks/evaluate_npu_cpu.py",
+      "sha256": "76b16e5699ff561adb2b8d8e484d3e2f5e8f374a9a6f392be2d18381cef779d3"
     },
     {
       "path": "benchmarks/inspect_npu_runtime.py",
@@ -84,6 +106,10 @@
       "sha256": "0b5c7528f3a5490f2a21c9adf1cc6c1074cbf8db535ea03a958ac20d7550361c"
     },
     {
+      "path": "benchmarks/validate_npu_final.py",
+      "sha256": "6eb5d3f15740e205d896b1ec9a7e97a8f4e901d4a9b00a57dd09265e1f1154b5"
+    },
+    {
       "path": "examples/images-manifest.json",
       "sha256": "20ff8fc31aa30cc6198a52f56e3048bdf4ac37704e0ffc730922645381e4107a"
     },
@@ -96,8 +122,60 @@
       "sha256": "3508a7af5320ab2e5447883cf3c7d7cdc42cd18f0a56d73e8d35cd2b248f8606"
     },
     {
+      "path": "summaries/gpu-20261031/README.md",
+      "sha256": "29e39ad406b73f7fdb944362675ce6bdf4ebb018163ba5ee8b3885673a71e6f5"
+    },
+    {
+      "path": "summaries/gpu-20261031/graph-20261031-124402--summary.json",
+      "sha256": "c357e4d4bf849b957cf44b8ac172b79af68a0fb29eec9de095574a656483e9fa"
+    },
+    {
+      "path": "summaries/gpu-20261031/graph-20261031-124402--yolo26n-448--result.json",
+      "sha256": "961795074fe0cda6b3e107b6d59f3c5441eb4a5818c2c1af391b47d3432f07d3"
+    },
+    {
+      "path": "summaries/gpu-20261031/inference-20261031-124553--runs.csv",
+      "sha256": "b12b41f9727bff59f4272f81d0a39426eccab2872eddd8afda2021553332f401"
+    },
+    {
+      "path": "summaries/gpu-20261031/inference-20261031-125138--runs.csv",
+      "sha256": "1f4b5e735535911827f64ed45c2470b840d77060cf0b5093bbd56cca4e5eec1b"
+    },
+    {
+      "path": "summaries/gpu-20261031/migraphx-20261031-124729.json",
+      "sha256": "2ba28a42554b146772fde645ad412b32b4ffae69052c6083b586636337d31ba6"
+    },
+    {
+      "path": "summaries/gpu-20261031/migraphx-20261031-124859.json",
+      "sha256": "fc1f0dc0d231c88d187411e07f9d3d589226aace09d4fd808df975f0d757992f"
+    },
+    {
+      "path": "summaries/gpu-20261031/migraphx-20261031-124958.json",
+      "sha256": "85d2f32072ea2298c9b502a3a73c0ef184ce9d061571ed7efa8a3b85d393dc43"
+    },
+    {
+      "path": "summaries/gpu-20261031/migraphx-20261031-125213.json",
+      "sha256": "45d80667134222c2672e2430a288c72183d4a470c3a29d09577f30f113fcdadc"
+    },
+    {
+      "path": "summaries/gpu-20261031/migraphx-20261031-125232.json",
+      "sha256": "72eabee941eed9164177912b58c392fd70b30252168cd3c6a5a74426d9817940"
+    },
+    {
+      "path": "summaries/gpu-20261031/migraphx-accuracy-20261031-125737.json",
+      "sha256": "fcbc1e5a5af10407d09cc9350d81f602d1c29cf2c27f8acc0becfa96034993b4"
+    },
+    {
+      "path": "summaries/migraphx-environment.json",
+      "sha256": "307b4128ddf7a9eaa298f890ad3a7acf33e796e76332e7aa00cc9d24803497bf"
+    },
+    {
       "path": "summaries/sustained.json",
       "sha256": "1f3a578908acf299c4b20517fbd37a7901cbbe05bc4a702f25d3e7fc730f567f"
+    },
+    {
+      "path": "tests/test_npu_paths.py",
+      "sha256": "f9fc7b55707c37fd3960ea95cbc897eb651679ba9ff07355c8b895de7f3dd785"
     },
     {
       "path": "tests/test_npu_runtime.py",

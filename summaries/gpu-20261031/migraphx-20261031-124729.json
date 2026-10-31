@@ -1,0 +1,233 @@
+{
+  "status": "failed",
+  "args": {
+    "precision": "fp16",
+    "seconds": 5.0,
+    "repeats": 3,
+    "warmup": 100,
+    "prebind": true,
+    "output": "$HOME/yolofast/results/migraphx-20261031-124729"
+  },
+  "batch": 1,
+  "size": 448,
+  "torch": "2.13.0+rocm10.0.0",
+  "hip": "7.15.26333",
+  "onnxruntime": "1.29.0",
+  "ultralytics": "8.4.194",
+  "device": "AMD Radeon 8060S Graphics",
+  "model_sha256": "4f77f7715de6e0807e0b4db4ea0eeae1780fc44f27b126cb5145d2fb96ae78f5",
+  "boundary": "preallocated GPU input -> 300x6 end2end detections; serial GPU completion; excludes preprocessing, input copy, result transfer and JSON",
+  "validation": [
+    {
+      "image": "000000000139.jpg",
+      "finite": true,
+      "reference_count": 8,
+      "candidate_count": 8,
+      "matched": 8,
+      "min_iou": 0.9817430377006531,
+      "max_score_diff": 0.0018337666988372803,
+      "passed": true
+    },
+    {
+      "image": "000000000285.jpg",
+      "finite": true,
+      "reference_count": 1,
+      "candidate_count": 1,
+      "matched": 1,
+      "min_iou": 0.9994792342185974,
+      "max_score_diff": 0.0001004934310913086,
+      "passed": true
+    },
+    {
+      "image": "000000000632.jpg",
+      "finite": true,
+      "reference_count": 4,
+      "candidate_count": 4,
+      "matched": 4,
+      "min_iou": 0.9957267642021179,
+      "max_score_diff": 0.0018793344497680664,
+      "passed": true
+    },
+    {
+      "image": "000000000724.jpg",
+      "finite": true,
+      "reference_count": 1,
+      "candidate_count": 1,
+      "matched": 1,
+      "min_iou": 0.9987539052963257,
+      "max_score_diff": 0.00032961368560791016,
+      "passed": true
+    },
+    {
+      "image": "000000000776.jpg",
+      "finite": true,
+      "reference_count": 3,
+      "candidate_count": 3,
+      "matched": 3,
+      "min_iou": 0.9984648823738098,
+      "max_score_diff": 0.0009833574295043945,
+      "passed": true
+    },
+    {
+      "image": "000000000785.jpg",
+      "finite": true,
+      "reference_count": 1,
+      "candidate_count": 1,
+      "matched": 1,
+      "min_iou": 0.9988410472869873,
+      "max_score_diff": 0.0003681182861328125,
+      "passed": true
+    },
+    {
+      "image": "000000000802.jpg",
+      "finite": true,
+      "reference_count": 1,
+      "candidate_count": 1,
+      "matched": 1,
+      "min_iou": 0.999065101146698,
+      "max_score_diff": 0.0018687248229980469,
+      "passed": true
+    },
+    {
+      "image": "000000000872.jpg",
+      "finite": true,
+      "reference_count": 3,
+      "candidate_count": 3,
+      "matched": 3,
+      "min_iou": 0.9947518706321716,
+      "max_score_diff": 0.0022525787353515625,
+      "passed": true
+    },
+    {
+      "image": "000000000885.jpg",
+      "finite": true,
+      "reference_count": 4,
+      "candidate_count": 5,
+      "matched": 4,
+      "min_iou": 0.9924479126930237,
+      "max_score_diff": 0.0172654390335083,
+      "passed": false
+    },
+    {
+      "image": "000000001000.jpg",
+      "finite": true,
+      "reference_count": 10,
+      "candidate_count": 10,
+      "matched": 10,
+      "min_iou": 0.9952656030654907,
+      "max_score_diff": 0.00460970401763916,
+      "passed": true
+    },
+    {
+      "image": "000000001268.jpg",
+      "finite": true,
+      "reference_count": 5,
+      "candidate_count": 5,
+      "matched": 5,
+      "min_iou": 0.9970245957374573,
+      "max_score_diff": 0.001230776309967041,
+      "passed": true
+    },
+    {
+      "image": "000000001296.jpg",
+      "finite": true,
+      "reference_count": 4,
+      "candidate_count": 4,
+      "matched": 4,
+      "min_iou": 0.9945212006568909,
+      "max_score_diff": 0.0023804008960723877,
+      "passed": true
+    },
+    {
+      "image": "000000001353.jpg",
+      "finite": true,
+      "reference_count": 4,
+      "candidate_count": 4,
+      "matched": 4,
+      "min_iou": 0.9962907433509827,
+      "max_score_diff": 0.0032973885536193848,
+      "passed": true
+    },
+    {
+      "image": "000000001425.jpg",
+      "finite": true,
+      "reference_count": 3,
+      "candidate_count": 3,
+      "matched": 3,
+      "min_iou": 0.9972496628761292,
+      "max_score_diff": 0.006691694259643555,
+      "passed": true
+    },
+    {
+      "image": "000000001490.jpg",
+      "finite": true,
+      "reference_count": 1,
+      "candidate_count": 1,
+      "matched": 1,
+      "min_iou": 0.9981913566589355,
+      "max_score_diff": 0.00038909912109375,
+      "passed": true
+    },
+    {
+      "image": "000000001503.jpg",
+      "finite": true,
+      "reference_count": 6,
+      "candidate_count": 6,
+      "matched": 6,
+      "min_iou": 0.992810845375061,
+      "max_score_diff": 0.01024174690246582,
+      "passed": true
+    },
+    {
+      "image": "000000001532.jpg",
+      "finite": true,
+      "reference_count": 6,
+      "candidate_count": 6,
+      "matched": 6,
+      "min_iou": 0.9938345551490784,
+      "max_score_diff": 0.007190614938735962,
+      "passed": true
+    },
+    {
+      "image": "000000001584.jpg",
+      "finite": true,
+      "reference_count": 7,
+      "candidate_count": 7,
+      "matched": 7,
+      "min_iou": 0.9876838326454163,
+      "max_score_diff": 0.0010638833045959473,
+      "passed": true
+    },
+    {
+      "image": "000000001675.jpg",
+      "finite": true,
+      "reference_count": 2,
+      "candidate_count": 2,
+      "matched": 2,
+      "min_iou": 0.9983131289482117,
+      "max_score_diff": 0.014090895652770996,
+      "passed": true
+    },
+    {
+      "image": "000000001761.jpg",
+      "finite": true,
+      "reference_count": 2,
+      "candidate_count": 2,
+      "matched": 2,
+      "min_iou": 0.9956827163696289,
+      "max_score_diff": 0.0002556443214416504,
+      "passed": true
+    }
+  ],
+  "runs": [],
+  "load_compile_s": 77.54617668300011,
+  "providers": [
+    "MIGraphXExecutionProvider",
+    "CPUExecutionProvider"
+  ],
+  "io_binding": true,
+  "validation_passed": false,
+  "error": "RuntimeError('Detection parity failed; speed rejected (IoU >= .95, score difference <= .03, confidence .25)')",
+  "source_record": "results/migraphx-20261031-124729/result.json",
+  "publication_note": "Recorded in source workspace; not rerun in this public repository. Model weights and implementation are not included."
+}

@@ -1,0 +1,44 @@
+{
+  "status": "complete",
+  "image_count": 5000,
+  "batch": 1,
+  "size": 448,
+  "precision": "fp32",
+  "score_threshold": 0.001,
+  "hip_graph": true,
+  "model_sha256": "349a966a0b1948f8eb33e2679ee559b14d815dc336e9a9c2d031ffcc71c7d61a",
+  "metrics": {
+    "pytorch_fp32": {
+      "mAP50_95": 0.3576234637694798,
+      "mAP50": 0.5060566623971325,
+      "mAP75": 0.3794403199685797,
+      "AP_small": 0.14524909701498573,
+      "AP_medium": 0.38266897925818,
+      "AP_large": 0.5836265548565881,
+      "AR1": 0.3059653584930959,
+      "AR10": 0.5021682796281042,
+      "AR100": 0.5592234682448204,
+      "AR_small": 0.29770443112983186,
+      "AR_medium": 0.6273519422226442,
+      "AR_large": 0.7921183783548064
+    },
+    "migraphx_fp32": {
+      "mAP50_95": 0.35762364050779216,
+      "mAP50": 0.5060575940213449,
+      "mAP75": 0.37944031955001045,
+      "AP_small": 0.14524888505056216,
+      "AP_medium": 0.3826690266652206,
+      "AP_large": 0.5836313301274539,
+      "AR1": 0.3059653584930959,
+      "AR10": 0.5021682796281042,
+      "AR100": 0.5592234682448204,
+      "AR_small": 0.29770443112983186,
+      "AR_medium": 0.6273519422226442,
+      "AR_large": 0.7921183783548064
+    }
+  },
+  "acceptance": "No user-specified mAP loss tolerance; report measured difference",
+  "mAP50_95_delta": 1.7673831237408066e-07,
+  "source_record": "results/migraphx-accuracy-20261031-125737/result.json",
+  "publication_note": "Recorded in source workspace; not rerun in this public repository. Model weights and implementation are not included."
+}

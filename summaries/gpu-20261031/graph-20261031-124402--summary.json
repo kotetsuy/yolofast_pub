@@ -1,0 +1,8 @@
+[
+  {
+    "model": "yolo26n",
+    "size": 448,
+    "returncode": 1,
+    "result": "$HOME/yolofast/results/graph-20261031-124402/yolo26n-448/result.json"
+  }
+]
