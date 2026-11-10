@@ -2,6 +2,7 @@
 !.gitignore
 .venv*/
 __pycache__/
+:memory:.ses
 *.pyc
 models/
 datasets/

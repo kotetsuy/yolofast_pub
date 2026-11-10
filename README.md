@@ -353,3 +353,25 @@ FPSの境界は正規化済みCPU入力→外部INT16量子化→NPU推論→CPU
 集計のホームパスは `$HOME` に置換しました。
 新たな測定ログは絶対パス等を記録するため、`outputs/` はGit対象外です。
 公開前の一覧は `PUBLICATION_MANIFEST.json` にあります。
+
+## gfx1150・ROCm 10.1 での MIGraphX 実行検証
+
+ROCm 10.1 と gfx1150 対応のドライバー、`rocminfo`、および同じ Python 環境に
+`numpy`、OpenCV、ONNX Runtime、ROCm 10.1 対応の `onnxruntime-ep-migraphx` と
+MIGraphX ライブラリーが必要です。環境の構築やパッケージのインストールは行いません。
+たとえば、対象環境の Python で次のように実行します。
+
+```bash
+/path/to/venv/bin/python benchmarks/validate_migraphx_gfx1150.py \
+  --image /path/to/image.jpg --output results/migraphx-gfx1150-validation.json
+```
+
+画像には検出対象が少なくとも一つ必要です。モデルの既定値は
+`~/yolofast/models/migraphx/yolo26n-448-fp32.onnx` で、`--model` で変更できます。
+`--rocm-path` の既定値は `/opt/rocm/core` です。スクリプトは ROCm 10.1 と
+単一の可視 gfx1150 GPU、FP32 固定形状、MIGraphX プロバイダーを確認し、CPU
+フォールバックを禁止して実行します。CPU と GPU で同一 ONNX の画像検出結果を比較し、
+検出数・クラス一致、IoU 0.95 以上、信頼度差 0.03 以下を要求します。
+失敗時は非ゼロ終了し、`--output` 指定時は結果を JSON に保存します。
+これは同一モデルの実行結果の比較であり、PyTorch 重みとの精度比較ではありません。
+初回推論時間には入力・出力転送が含まれ、ベンチマーク値ではありません。
