@@ -201,6 +201,28 @@ PYTHON
 )
 ```
 
+### GPU: ROCm 10.2・Python 3.14
+
+gfx1151 向けに、既存の ROCm 10.0 環境とは別の環境を作成します。
+Python 3.14.3 と AMD の `whl-next` インデックスにある PyTorch
+2.13.0+rocm10.2.0、torchvision 0.28.0+rocm10.2.0 が必要です。
+既定の Python パスは `~/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/python3.14` です。
+別の Python を使う場合は `PYTHON_FOR_ROCM10_PY314` を指定してください。
+
+```bash
+bash scripts/setup_rocm102_py314.sh
+.venv-rocm102-py314/bin/python -B - <<'PYTHON'
+import torch
+assert torch.cuda.is_available(), 'ROCm GPU unavailable'
+x = torch.ones(16, device='cuda')
+assert (x + x).sum().item() == 32
+torch.cuda.synchronize()
+print(torch.cuda.get_device_name(0), torch.__version__, torch.version.hip)
+PYTHON
+```
+
+導入したパッケージの一覧は `results/packages-rocm102-py314.json` に保存されます。
+
 ### ONNX出力: `~/yolofast/.venv-npu-export`
 
 デモのエクスポートはCPUで `torch.onnx.export(..., dynamo=False)` を実行します。
